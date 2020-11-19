@@ -1,6 +1,6 @@
 # National Basketball Association (NBA) Game Outcome Projections
 
-_Who will win each NBA game? This classifier takes inputs of both team's various team statistics entering a game (i.e. 2-pt FG %, ASTs/game, winning %) and outputs the probability of each team winning.__
+_Who will win each NBA game? This classifier takes inputs of both team's various team statistics entering a game (i.e. 2-pt FG %, ASTs/game, winning %) and outputs the probability of each team winning._
 
 __1. Data__
 
