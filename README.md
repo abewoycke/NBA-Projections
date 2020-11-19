@@ -14,13 +14,13 @@ __2. Data Wrangling/Cleaning__
 
 I dealt with a handful of null/missing values. I verified some individual player stats that had been missing to make sure that missing values should be filled with 0. This was accurate.
 
-I made several functions to transform the data into the form of observations that would be most useful. I wrote a function that compiles team's individual games in a season up to the game in question and returns their stats coming into that game. The resultant dataframe has rows that are both the home and away team's stats entering the game, along with the game result.
+I made several functions to transform the data into the form of observations that would be most useful. I wrote a function that compiles team's individual games in a season up to the game in question and returns their stats coming into that game. The resultant data frame has rows that are both the home and away team's stats entering the game, along with the game result.
 
 __3. EDA__
 
 [EDA Notebook](https://github.com/abewoycke/NBA-Projections/blob/master/3_EDA/NBA%20Projections%20EDA.ipynb)
 
-I did some manual feature transformations based on my domain knowledge. My main goal was to remove redundancies/collinearity in the predictor variables (i.e. transforming 2-pt FGM and 2-pt FGA into 2-pt FG%). I also used a Bayesian prior for each team's win percentage so that early season win percentages (that would normally be at 0% or 100%) wouldn't be outliers.  The hope is that this would make for more meaningful predictor features, and that I wouldn't have to limit the range of avaialble classifier models to those that deal with multicollinearity well.
+I did some manual feature transformations based on my domain knowledge. My main goal was to remove redundancies/collinearity in the predictor variables (i.e. transforming 2-pt FGM and 2-pt FGA into 2-pt FG%). I also used a Bayesian prior for each team's win percentage so that early season win percentages (that would normally be at 0% or 100%) wouldn't be outliers.  The hope is that this would make for more meaningful predictor features, and that I wouldn't have to limit the range of available classifier models to those that deal with multicollinearity well.
 
 ![Variable Heatmap](https://github.com/abewoycke/NBA-Projections/blob/master/3_EDA/heatmap.png)
 
@@ -71,7 +71,7 @@ I would be interested in seeing if there are tweaks that could be made that woul
 
 __6. Future Improvements__
 
-If the data is available, I would be interested in expanding the dataset and looking at data before 2004. I would also be interested in building a pipeline to simulate full seasons using the dataset. Also, I would be interested in seeing how the model performs against truly unseen data with pre-2004 backtesting, and how it will perform in the upcoming 2020-2021 season (although that might be weird sample due to limited home fan attendance).
+If the data is available, I would be interested in expanding the dataset and looking at data before 2004. I would also be interested in building a pipeline to simulate full seasons using the dataset. Also, I would be interested in seeing how the model performs against truly unseen data with pre-2004 backtesting, and how it will perform in the upcoming 2020-2021 season (although that might be a weird sample due to limited home fan attendance).
 
 __7. Project Writeup:__
 
