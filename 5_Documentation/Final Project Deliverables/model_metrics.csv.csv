@@ -1,0 +1,6 @@
+Model,AUROC,Accuracy
+GradientBoostingClassifier,0.698,0.661
+Logistic Regression,0.696,0.643
+Neural Network,0.691,0.656
+Soft Voting Classifier,0.697,0.662
+Hard Voting Classifier,0.67,0.657
