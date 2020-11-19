@@ -53,13 +53,23 @@ __5. Model Predictions__
 
 [Documentation Notebook](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/NBA%20Projections%20Documentation.ipynb)
 
-The model performed fairly well. The accuracy being about 66% is good when compared with some other classifications (expert picks at 59%).
-
-![Confusion Matrix](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/confusion_matrix.png)
+The model performed fairly well. The accuracy being about 66% is good when compared with some other classifications (expert consensus picks come in at ~59%). This represents an ~11% increase in relative performance, or a 7% increase in classification accuracy overall.
 
 ![Roc Curve](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/roc.png)
 
+The overall AUROC score is alright. I think that NBA games are inherently hard to predict at too high a clip. An AUROC in the area of 0.7 represents that the model makes somewhat more meaningful predictions than just randomly guessing or always guessing the dominant class.
+
+![Precision Recall Curve](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/precision_recall.png)
+
+In this case, I don't place a different value on Type 1 or Type 2 errors, so don't have a strong opinion on maximizing precision or recall.
+
+![Confusion Matrix](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/confusion_matrix.png)
+
+I would be interested in seeing if there are tweaks that could be made that would decrease the false positive rate. I attribute the high false positives to class imbalance (home teams win 59% of the time).
+
 __6. Future Improvements__
+
+If the data is available, I would be interested in expanding the dataset and looking at data before 2004. I would also be interested in building a pipeline to simulate full seasons using the dataset. Also, I would be interested in seeing how the model performs against truly unseen data with pre-2004 backtesting, and how it will perform in the upcoming 2020-2021 season (although that might be weird sample due to limited home fan attendance).
 
 __7. Project Writeup:__
 
