@@ -77,6 +77,8 @@ If the data is available, I would be interested in expanding the dataset and loo
 
 __7. Project Writeup:__
 
+[Final Project PDF](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/Final%20Project%20Deliverables/NBA%20Game%20Outcome%20Classifier%20Final%20Project%20Report.pdf)
+
 __8. Credits__
 
 Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
