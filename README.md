@@ -1,5 +1,7 @@
 # National Basketball Association (NBA) Game Outcome Projections
 
+![NBA Logo](https://github.com/abewoycke/NBA-Projections/blob/master/5_Documentation/nba_logo.jpg)
+
 _Who will win each NBA game? This classifier takes inputs of both team's various team statistics entering a game (i.e. 2-pt FG %, ASTs/game, winning %) and outputs the probability of each team winning._
 
 __1. Data__
