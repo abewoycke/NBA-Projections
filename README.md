@@ -46,8 +46,10 @@ __4. Modeling and Tuning__
 [Modeling Notebook](https://github.com/abewoycke/NBA-Projections/blob/master/4_Preprocessing_Modeling/NBA%20Projections%20Preprocessing%20Modeling%20Clean.ipynb)
 
 I focused on three models: GradientBoostingClassifier, a Neural Network, and a Logistic Regression. I also built hard and soft voting classifiers from those three. I used Area Under the Receiver Operator Curve (AUROC) as my primary metric for performance, because:
+
 a) in this use case, I don't place a stronger value on either Type 1 or Type 2 errors
-2) AUROC is better than pure accuracy in this case when the data is imbalanced (home teams win 59.6% of the time)
+
+b) AUROC is better than pure accuracy in this case when the data is imbalanced (home teams win 59.6% of the time)
 
 After tuning all three of the models with a combination of HyperOpt, GridSearch, and RandomSearch, the tuned __GradientBoostingClassifier__ performed the best with an AUROC of 0.697 and a classification accuracy of 66.2%.
 
